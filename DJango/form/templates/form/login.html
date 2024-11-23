@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'form/styles.css' %}">
+</head>
+
+<body>
+    <form class="form_div">  
+        <h1 class="form_title">Login</h1>
+
+        <div class="input_div">
+            <h2>Email</h2>
+            <input 
+                type="email" 
+                class="input" 
+                placeholder="Enter your email">
+        </div>
+
+        <div class="input_div">
+            <h2>Password</h2>
+            <input 
+            type="password" 
+            class="input" 
+            placeholder="Enter your password">
+        </div>
+        <button type="submit" class="submit_button">Login</button>
+
+        <p class="href_link_p">
+            don't have account
+            <a
+            href="/form/signup" 
+            class="href_link"
+            >
+            signup
+            </a>
+        </p>
+
+    </form>
+</body>
+
+</html>
