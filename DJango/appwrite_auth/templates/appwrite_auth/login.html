@@ -4,25 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup</title>
+    <title>Login</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'form/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'appwrite_auth/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'DJango/utils.css' %}">
+
 </head>
 
 <body>
-    <form class="form_div">
-        <h1 
-        class='form_title'
-        >
-        Sign Up
-        </h1>
-        <div class="input_div">
-            <h2>Full Name</h2>
-            <input 
-                type="text" 
-                class="input" 
-                placeholder="Enter your full name">
-        </div>
+    <form class="form_div">  
+        <h1 class="form_title">Login</h1>
 
         <div class="input_div">
             <h2>Email</h2>
@@ -40,13 +31,15 @@
             placeholder="Enter your password">
         </div>
         <button type="submit" class="submit_button">Login</button>
-        <p class="href_link_p">
-            already have account
+
+        <p class="href_link_p red">
+            don't have account
             <a
-            href="/form/login" 
+            href="/auth/signup" 
             class="href_link"
+            
             >
-            login
+            signup
             </a>
         </p>
 
